@@ -607,7 +607,9 @@ RenderInit(void)
 	colourCodePipe = makeColourCodePipeline();
 	MakeCustomBuildingPipelines();
 	MakeNeoWorldPipe();
+#ifdef RW_D3D9
 	MakeLeedsPipe();
+#endif
 }
 
 #ifdef RW_D3D9

@@ -1,4 +1,5 @@
 #include "euryopa.h"
+#include <algorithm>
 
 namespace Clouds
 {

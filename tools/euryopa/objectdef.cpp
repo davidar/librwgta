@@ -102,8 +102,10 @@ SetupAtomic(rw::Atomic *atm)
 
 	if(params.neoWorldPipe)
 		atm->pipeline = neoWorldPipe;
+#ifdef RW_D3D9
 	else if(params.leedsPipe)
 		atm->pipeline = leedsPipe;
+#endif
 	else if(params.daynightPipe && IsBuildingPipeAttached(atm))
 		SetupBuildingPipe(atm);
 	else{

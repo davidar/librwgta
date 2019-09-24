@@ -1,4 +1,5 @@
 #include "euryopa.h"
+#include <climits>
 
 GameFile*
 NewGameFile(char *path)
@@ -417,7 +418,7 @@ void
 LoadObjectTypes(const char *filename)
 {
 	int i;
-	firstID = MAXINT;
+	firstID = INT_MAX;
 	lastID = -1;
 	LoadDataFile(filename, ideDesc);
 

@@ -363,7 +363,7 @@ FindAnimation(AnimPackage *pack, const char *name)
 {
 	int i;
 	for(i = 0; i < pack->numAnimations; i++)
-		if(stricmp(pack->animations[i].name, name) == 0)
+		if(strcasecmp(pack->animations[i].name, name) == 0)
 			return i;
 	return -1;
 }
